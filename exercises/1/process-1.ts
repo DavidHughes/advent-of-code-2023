@@ -13,6 +13,7 @@ const fetchFileContents = (pathToFile: string) => {
 const isCharacterNumeric = (char: string) => {
     return /\d/.test(char)
 }
+
 let calculateCalibrationValue = (line: string) => {
     const chars = line.split('');
     if (chars.length === 0) {
