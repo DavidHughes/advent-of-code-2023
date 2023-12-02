@@ -1,4 +1,4 @@
-const fs = require('node:fs');
+import { fetchFileContents } from "../../lib/utils";
 
 type FoundDigit = {
     digit: string|number, 
@@ -26,16 +26,6 @@ const digits = [
     8,
     9
 ];
-
-const fetchFileContents = (pathToFile: string) => {
-    try {
-        const data = fs.readFileSync(pathToFile, 'utf8');
-        return data.split('\n');
-    } catch (err) {
-        console.error(err);
-        return[];
-    }
-}
 
 const reverseText = (text: string) => text.split('').reverse().join('');
 
