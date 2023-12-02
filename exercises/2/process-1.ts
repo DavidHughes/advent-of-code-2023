@@ -64,10 +64,6 @@ const isGamePossible = (game: Game) => {
     });
 
     const gamePossibility = setsPossiblity.every((bool) => bool);
-    if (gamePossibility) {
-        console.log(`Game ${game.id} is possible, sets are:`);
-        console.log(game.sets);
-    }
 
     return gamePossibility;
 }
