@@ -3,7 +3,6 @@ import { fetchFileContents } from "../../lib/utils";
 const startNodeID = 'AAA';
 const endNodeID = 'ZZZ';
 
-type Direction = 'left' | 'right';
 type NodeID = string;
 type NodeRoute = {
     left: NodeID,
